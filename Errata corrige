@@ -1,0 +1,40 @@
+Analizzando il contenuto del libro ho riscontrato questo errore: Capitolo 3
+Struttura della Cartella bot , manga il file db.php necessario per la connessione al db
+questo è il suo contentuto:
+
+<?php
+function openDbConnection() {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "bot";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connessione fallita: " . $conn->connect_error);
+    }
+
+    return $conn;
+}
+?>
+
+Analyzing the contents of the book I found this error: Chapter 3
+Structure of the bot folder, manga the db.php file necessary for connecting to the db
+this is its contents:
+<?php
+function openDbConnection() {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "bot";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connessione fallita: " . $conn->connect_error);
+    }
+
+    return $conn;
+}
+?>
